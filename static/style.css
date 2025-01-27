@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+    margin: 0;
+}
+.upload-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f4f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 100%;
+}
+input[type="file"] {
+    display: none; /* Hide the default file input */
+}
+.file-upload {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.file-upload:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+.image-preview {
+    margin-top: 15px;
+    margin-bottom: 15px ;
+    max-width: 100%;
+    max-height: 200px; /* Limit the height of the preview */
+    align-self: center;
+    border-radius: 6px;
+}
+.button-container {
+    margin-top: 20px;
+}
+.action-button {
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.submit-button {
+    background-color: #007bff; /* Blue for submit */
+    color: white;
+}
+.submit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+.extracted-text {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 80%;
+    font-size: 16px;
+    display: none;
+}
+#buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    gap: 2;
+}

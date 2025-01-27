@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload UI</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+
+<div class="upload-container">
+    <h2>Upload an Image</h2>
+    <img id="image-preview" class="image-preview" src="" alt="Image Preview" style="display:none;" />
+
+    <div id="extracted-text" class="extracted-text"></div>
+
+    <di id="buttons">
+        <label class="file-upload" for="file-input">Choose File</label>
+        <input type="file" id="file-input" accept=".png, .jpg, .jpeg, .svg" />
+
+        <div class="button-container" style="display:none;">
+            <button class="action-button submit-button">Submit</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://cdn.rawgit.com/naptha/tesseract.js/2.1.1/dist/tesseract.min.js"></script>
+<script src="../static/script.js"></script>
+
+</body>
+</html>
